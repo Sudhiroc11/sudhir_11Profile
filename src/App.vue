@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf" id="lay-out">
+    <notifications group="foo" position="top center" style="z-index: 10001" />
     <router-view /> 
   </q-layout>
 </template>

@@ -71,30 +71,34 @@
             </q-list>
           </q-drawer>
         </div>
-        <div class="col-lg-9 col-md-9">
+        <div class="col-lg-1 col-md-1">
+        </div>
+        <div class="col-lg-8 col-md-8">
           <div>
            <userCard />
           </div>
         </div>
       </div>
     </div>
-    
-        
-
     <div class="mobile-view">
       <q-header class="aspire-mb-header">
-        <q-toolbar class="q-px-lg q-mt-lg">
+        <q-toolbar class="q-px-lg q-mt-md">
           <q-space />
           <img
             src="../assets/Image/aspireIcone.png"
           />
         </q-toolbar>
-
-        <div class="q-pr-lg">
+        <div>
           <userCard />
         </div>
       </q-header>
-
+      <q-page class="aspire-page">
+        <div v-for="n in 100" :key="n" class="q-pa-xs">
+          Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+        </div>
+      </q-page>
       <q-footer elevated class="bg-white text-primary">
         <div class="aspire-mb-footer q-py-sm">
           <div>
@@ -130,7 +134,6 @@
         </div>
       </q-footer>
     </div>
-
     <q-page-container>
       <transition name="slide" mode="out-in">
 			  <router-view />
@@ -148,26 +151,20 @@ export default {
   data () {
     return {
       leftDrawerOpen: true,
-      tab: 'images'
+      tab: 'images',
     }
   },
-  methods:{
-    
-  }
 }
 </script>
-
 <style lang="scss" scoped>
 $blue-color:#0C365A;
 $green-color:#01D167;
-
 .text-aspire-blue {
   color: $blue-color !important;
 }
 .bg-aspire-blue {
   background: $blue-color !important;
 }
-
 @media all and (max-width: 1023px){
   .mobile-view{
     display: block;
@@ -187,13 +184,21 @@ $green-color:#01D167;
 .aspire-mb-header{
   background-color: $blue-color;
   color: #fff;
-  // padding-bottom: 4rem;
+  padding-bottom: 3rem;
   z-index: 0;
 }
 .aspire-mb-footer{
   display: flex;
   text-align: center;
   justify-content: space-around;
+}
+.aspire-page{
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-top: -1rem;
+  background: #fff;
+  padding: 1.5rem;
+  margin-top: 450px;
 }
 </style>
 
