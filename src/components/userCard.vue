@@ -45,7 +45,7 @@
 
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="q-py-lg">
+              <!-- <div class="q-py-lg" v-for='userCard in userCards' :key='userCard.cardNo'>
                 <q-card class="user-card q-pa-md">
                   <div style="text-align: end;">
                     <img
@@ -53,7 +53,7 @@
                     />
                   </div>
                   <div class="text-h6 q-py-xs" style="color:white;">
-                    Sudhir Gupta
+                    {{userCard.userCardName}}
                   </div>
                   <div style="display:flex;justify-content: space-between;" class="q-py-sm">
                     <div>
@@ -75,7 +75,7 @@
                       <span class="dot"></span>
                     </div>
                     <div style="color:white;">
-                      2020
+                      {{userCard.cardSlNumber}}
                     </div>
                   </div>
                   <div style="display:flex; color:white;">
@@ -92,7 +92,74 @@
                     />
                   </div>
                 </q-card>
-              </div>
+              </div> -->
+              
+              <q-carousel
+                v-model="userCard"
+                swipeable
+                animated
+                navigation
+                infinite
+              >
+                <template v-slot:navigation-icon="{ active, btnProps, onClick }">
+                  <q-btn v-if="active" size="md" icon="circle" color="green" flat round dense @click="onClick" />
+                  <q-btn v-else size="xs" :icon="btnProps.icon" color="green-11" flat round dense @click="onClick" />
+                </template>
+
+                <q-carousel-slide 
+                  v-for="userCard in userCards" :key="userCard.id" :name="userCard.id" 
+                  :img-src="userCard.url" 
+                >
+
+                  <q-card class="user-card q-pa-md">
+                  <div style="text-align: end;">
+                    <img
+                    src="../assets/Image/aspir-card-logo.png"
+                    />
+                  </div>
+                  <div class="text-h6 q-py-xs" style="color:white;">
+                    {{userCard.userCardName}}
+                  </div>
+                  <div style="display:flex;justify-content: space-between;" class="q-py-sm">
+                    <div>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <div>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <div>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <div style="color:white;">
+                      {{userCard.cardSlNumber}}
+                    </div>
+                  </div>
+                  <div style="display:flex; color:white;">
+                    <div class="q-pr-sm">
+                      Mon: 12/20
+                    </div>
+                    <div class="q-px-sm">
+                      CCV: ***
+                    </div>
+                  </div>
+                  <div style="text-align: end;">
+                    <img
+                    src="../assets/Image/visaLogo.png"
+                    />
+                  </div>
+                  </q-card>
+                </q-carousel-slide>
+              </q-carousel>
+              
             </div>
           </div>
         </div>
@@ -148,6 +215,23 @@
 </template>
 
 <script>
+const userCards = [
+  {
+    id: 1,
+    userCardName: "Sudhir Gupta",
+    cardSlNumber:2020,
+  },
+  {
+    id: 2,
+    userCardName: "Mark Henry",
+    cardSlNumber:2022,
+  },
+  {
+    id: 3,
+    userCardName: "Max L",
+    cardSlNumber:2019,
+  },
+]
 export default {
   components: {
   },
@@ -157,7 +241,10 @@ export default {
       addCard: false,
       cardName:"",
       userName:"",
-      
+
+      userCard: 1,
+      userCards
+
     }
   },
   methods:{
@@ -205,6 +292,11 @@ $primary-color:#23CEFD;
   border-radius: 50%;
   display: inline-block;
   margin: 2px;
+}
+
+.q-carousel {
+  height: 275px !important;
+  background-color: transparent !important;
 }
 </style>
 

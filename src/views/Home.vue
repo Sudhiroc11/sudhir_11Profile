@@ -3,73 +3,73 @@
     <div class="desktop-view">
       <div class="row">
         <div class="col-lg-3 col-md-3">
-          <!-- <q-drawer
-        v-model="leftDrawerOpen"
-        bordered
-        :width="400"
-        content-class="bg-primary"
-      >
-        <div class="q-px-lg">
-          <img
-            src="../assets/Image/aspireLogo.svg"
-            class="q-mt-xl q-mb-lg"
-          />
-          <div style="color:#FFFFFF;opacity:30%;">
-            Trusted way of banking for 
-            3,000+ SMEs and startups in Singapore
-          </div>
-        </div>
+          <q-drawer
+            v-model="leftDrawerOpen"
+            bordered
+            :width="400"
+            :content-style="{ backgroundColor: '#0C365A' }"
+          >
+            <div class="q-px-lg">
+              <img
+                src="../assets/Image/aspireLogo.svg"
+                class="q-mt-xl q-mb-lg"
+              />
+              <div style="color:#FFFFFF;opacity:30%;">
+                Trusted way of banking for 
+                3,000+ SMEs and startups in Singapore
+              </div>
+            </div>
 
-        <q-list>
+            <q-list class="q-pt-lg">
 
-          <q-item clickable v-ripple style="color: white;">
-            <q-item-section avatar>
-              <q-icone>
-                <img src="../assets/Image/Home.png">
-              </q-icone>
-            </q-item-section>
-            <q-item-section>Home</q-item-section>
-          </q-item>
+              <q-item clickable v-ripple style="color: white;" class="q-py-lg">
+                <q-item-section avatar>
+                  <q-icone>
+                    <img src="../assets/Image/Home.png">
+                  </q-icone>
+                </q-item-section>
+                <q-item-section>Home</q-item-section>
+              </q-item>
 
-          <q-item clickable v-ripple style="color: green;">
-            <q-item-section avatar>
-              <q-icone>
-                <img src="../assets/Image/Card.png">
-              </q-icone>
-            </q-item-section>
-            <q-item-section>Cards</q-item-section>
-          </q-item>
+              <q-item clickable v-ripple style="color: green;" class="q-py-lg">
+                <q-item-section avatar>
+                  <q-icone>
+                    <img src="../assets/Image/Card.png">
+                  </q-icone>
+                </q-item-section>
+                <q-item-section>Cards</q-item-section>
+              </q-item>
 
-          <q-item clickable v-ripple style="color: white;">
-            <q-item-section avatar>
-              <q-icone>
-                <img src="../assets/Image/Payments.png">
-              </q-icone>
-            </q-item-section>
-            <q-item-section>Payments</q-item-section>
-          </q-item>
+              <q-item clickable v-ripple style="color: white;" class="q-py-lg">
+                <q-item-section avatar>
+                  <q-icone>
+                    <img src="../assets/Image/Payments.png">
+                  </q-icone>
+                </q-item-section>
+                <q-item-section>Payments</q-item-section>
+              </q-item>
 
 
-          <q-item clickable v-ripple style="color: white;">
-            <q-item-section avatar>
-              <q-icone>
-                <img src="../assets/Image/Credit.png">
-              </q-icone>
-            </q-item-section>
-            <q-item-section>Credit</q-item-section>
-          </q-item>
+              <q-item clickable v-ripple style="color: white;" class="q-py-lg">
+                <q-item-section avatar>
+                  <q-icone>
+                    <img src="../assets/Image/Credit.png">
+                  </q-icone>
+                </q-item-section>
+                <q-item-section>Credit</q-item-section>
+              </q-item>
 
-          <q-item clickable v-ripple style="color: white;">
-            <q-item-section avatar>
-              <q-icone>
-                <img src="../assets/Image/Account.png">
-              </q-icone>
-            </q-item-section>
-            <q-item-section>Settings</q-item-section>
-          </q-item>
+              <q-item clickable v-ripple style="color: white;" class="q-py-lg">
+                <q-item-section avatar>
+                  <q-icone>
+                    <img src="../assets/Image/Account.png">
+                  </q-icone>
+                </q-item-section>
+                <q-item-section>Settings</q-item-section>
+              </q-item>
 
-        </q-list>
-          </q-drawer> -->
+            </q-list>
+          </q-drawer>
         </div>
         <div class="col-lg-9 col-md-9">
           <div>
@@ -160,6 +160,14 @@ export default {
 <style lang="scss" scoped>
 $blue-color:#0C365A;
 $green-color:#01D167;
+
+.text-aspire-blue {
+  color: $blue-color !important;
+}
+.bg-aspire-blue {
+  background: $blue-color !important;
+}
+
 @media all and (max-width: 1023px){
   .mobile-view{
     display: block;
