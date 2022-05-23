@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import './quasar'
 
+
 Vue.config.productionTip = false
 import Notifications from 'vue-notification'
 Vue.use(Notifications)
