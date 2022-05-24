@@ -61,117 +61,581 @@
 
 
     <!-- Desktop-design -->
-    <div  class="desktop-view-rpl" style="padding-top:50px;">
+    <div  class="desktop-view-rpl main" style="padding-top:50px;">
       <div id="home-desk" class="full-height full-width flex flex-center text-center"
-        style="z-index:0;height: 100vh !important;"
+        style="background-color: rgba(0, 0, 0, 0.68) !important;z-index:0;"
       >
         <div>
-          <div class="text-h6" style="color: #00d1c1;">
+          <div class="text-h6" style="color: white;">
             WELCOME TO MY PAGE
           </div>
-          <div class="text-h2  q-py-sm q-my-md"
+          <div class="text-h2 text-white q-py-sm q-my-md"
             style="border-top:3px solid #00d1c1;border-bottom: 3px solid #00d1c1; color: #00d1c1;"
           >
             I'M A FRONT-END DEVELOPER
           </div>
-          <div class="text-h6" style="color: #00d1c1;">
-            JAVASCRIPT | VUE JS | HTML5/CSS3
-          </div>
-          <div style="color: #00d1c1 !important;" class="text-h4 q-mt-md text-grey-2 my-font">
+          <div style="color: white !important;" class="text-h4 q-mt-md text-grey-2 my-font">
             Sudhir Kumar Gupta
           </div>
         </div>
       </div>
-      <div class="row" id="id_about_me">
+      <div class="row" id="id_about_me" style="background-color: #00d1c1;">
         <div class="col-lg-1 col-md-1"></div>
         <div class="col-lg-5 col-md-5">
-          <img src="../assets/my_2.jpeg" style="width: 100%;">
+          <img src="../assets/my_2.png" style="width: 100%;">
         </div>
         <div class="col-lg-5 col-md-5">
-          hi
+          <div 
+            class="full-height full-width flex flex-center text-center text-white text-h5 q-pa-md"
+            style="text-align:start;"
+          >
+            I am a passionate software developer with excellent problem-solving skills and the 
+            ability to perform well in a team. As a Frontend Developer with 2+ years of experience
+            in designing and building responsive web applications. Passionate about coding and 
+            the new web technologies.<br>
+            currently, I am working in MNI Pvt. Ltd. Bengaluru.
+          </div>
         </div>
         <div class="col-lg-1 col-md-1"></div>
       </div>
       <div class="row" id="id_projects">
         <div class="col-lg-1 col-md-1"></div>
-        <div class="col-lg-5 col-md-5">
-          <img src="../assets/my_2.jpeg" style="width: 100%;">
-        </div>
-        <div class="col-lg-5 col-md-5">
-          hi
+        <div class="col-lg-10 col-md-10">
+          <q-timeline  color="secondary">
+
+            <q-timeline-entry heading style="color:#00d1c1">
+              PROJECTS
+            </q-timeline-entry>
+
+            <q-timeline-entry
+              title="NRF (Management of cooling products for 
+              the automotive market, industrial, railway and 
+              marine sector)"
+              subtitle="Started:- February, 2020 - Ongoing"
+              side="left"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div style="text-align:start;">
+                    Developed kanban chart to maintain the product orders. <br>
+                    Implemented VueJS i18n to manage translations based on user location. <br>
+                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                    Integrated google and microsoft authentication to achieve SSO. 
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+
+                  <q-carousel
+                    animated
+                    v-model="nrfSlide"
+                    arrows
+                    navigation
+                    infinite
+                    control-color="black"
+                    class="bg-secondary shadow-2 rounded-borders"
+                  >
+                    <q-carousel-slide :name="1">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf1.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="2">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf2.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="3">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf3.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="4">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf4.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    
+                  </q-carousel>
+
+
+                </div>
+                
+              </div>
+
+            </q-timeline-entry>
+            <q-timeline-entry
+              title="NRF (Management of cooling products for 
+              the automotive market, industrial, railway and 
+              marine sector)"
+              subtitle="Started:- February, 2020 - Ongoing"
+              side="left"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div style="text-align:start;">
+                    Developed kanban chart to maintain the product orders. <br>
+                    Implemented VueJS i18n to manage translations based on user location. <br>
+                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                    Integrated google and microsoft authentication to achieve SSO. 
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <q-carousel
+                    animated
+                    v-model="mtSlide"
+                    arrows
+                    navigation
+                    infinite
+                    control-color="black"
+                    class="bg-secondary shadow-2 rounded-borders"
+                  >
+                    <q-carousel-slide :name="1">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/mt1.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="2">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/mt2.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="3">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/mt3.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="4">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/mt4.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    
+                  </q-carousel>
+
+
+                </div>
+                
+              </div>
+
+            </q-timeline-entry>
+            <q-timeline-entry
+              title="NRF (Management of cooling products for 
+              the automotive market, industrial, railway and 
+              marine sector)"
+              subtitle="Started:- February, 2020 - Ongoing"
+              side="left"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div style="text-align:start;">
+                    Developed kanban chart to maintain the product orders. <br>
+                    Implemented VueJS i18n to manage translations based on user location. <br>
+                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                    Integrated google and microsoft authentication to achieve SSO. 
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <q-carousel
+                    animated
+                    v-model="nmdbSlide"
+                    arrows
+                    navigation
+                    infinite
+                    control-color="black"
+                    class="bg-secondary shadow-2 rounded-borders"
+                  >
+                    <q-carousel-slide :name="1">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf1.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="2">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf2.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="3">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf3.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="4">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nrf4.png">
+                      </q-card>
+                    </q-carousel-slide>
+                    
+                  </q-carousel>
+
+
+                </div>
+                
+              </div>
+
+            </q-timeline-entry>
+
+            <q-timeline-entry>
+            </q-timeline-entry>
+
+          </q-timeline>
         </div>
         <div class="col-lg-1 col-md-1"></div>
       </div>
       <div class="row" id="id_skills">
         <div class="col-lg-1 col-md-1"></div>
-        <div class="col-lg-5 col-md-5">
-          <img src="../assets/my_2.jpeg" style="width: 100%;">
-        </div>
-        <div class="col-lg-5 col-md-5">
-          hi
+        <div class="col-lg-10 col-md-10">
+          <div style="text-align:center; color:#00d1c1;" class="text-h2 q-py-md">
+            Skills
+          </div>
+          <q-card 
+            class="q-pa-lg" 
+            style="display:flex;justify-content: space-evenly;
+            border: 2px solid black;
+            background: #00d1c1"
+          >
+            <div>
+              <img src="../assets/sk1.png" style="height:100px;width:100px;">
+            </div>
+            <div>
+              <img src="../assets/sk2.png" style="height:100px;width:100px;">
+            </div>
+            <div>
+              <img src="../assets/sk3.webp" style="height:100px;width:100px;">
+            </div>
+            <div>
+              <img src="../assets/sk4.png" style="height:100px;width:100px;">
+            </div>
+            <div>
+              <img src="../assets/sk5.svg" style="height:100px;width:100px;">
+            </div>
+            <div>
+              <img src="../assets/sk6.png" style="height:100px;width:100px;">
+            </div>
+            <div>
+              <img src="../assets/sk7.png" style="height:100px;width:100px;">
+            </div>
+            
+            <div>
+              <img src="../assets/sk10.png" style="height:100px;width:100px;">
+            </div>
+          </q-card>
         </div>
         <div class="col-lg-1 col-md-1"></div>
       </div>
-      <div class="row" id="id_contact">
+      <div class="q-py-lg"></div>
+      <div class="row q-py-lg" id="id_contact">
         <div class="col-lg-1 col-md-1"></div>
-        <div class="col-lg-5 col-md-5">
-          <img src="../assets/my_2.jpeg" style="width: 100%;">
-        </div>
-        <div class="col-lg-5 col-md-5">
-          hi
+        <div class="col-lg-10 col-md-10">
+          <div style="text-align:center; color:#00d1c1;" class="text-h3 q-py-lg">
+            Get in Touch !
+          </div>
+          <div style="text-align:center; color:#00d1c1;" class="text-h5 q-py-xs">
+            contact me for more info 
+          </div>
+          <div class="row q-pt-md">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="mail-info-child">
+                <div>
+                  <span class="mif-mail icone-css"></span>
+                </div>
+                <div class="more-info q-pt-sm">
+                  sudhir.oc11@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="mail-info-child">
+                <div>
+                  <span class="mif-whatsapp icone-css"></span>
+                </div>
+
+                <div class="more-info q-pt-sm">
+                  +91 9108677220
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="mail-info-child">
+                <div>
+                  <span class="mif-location icone-css"></span>
+                </div>
+                <div class="more-info q-pt-sm">
+                  BTM Layout 1st Stage , 
+                  Bangalore 560029
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-1 col-md-1"></div>
       </div>
+
+      <q-toolbar 
+        class="flex flex-center text-white" 
+        style="background-color: #00d1c1;border-top: 2px solid green"
+      >
+      <div class="q-pa-sm q-gutter-sm">
+        <q-btn 
+          target="_blank" 
+          style="border: 2px solid green"
+          round type="a" 
+          href="https://twitter.com/SudhirGupta_11?t=zZgJ4D2n6nKnp5w7915c4A&s=08"
+          glossy
+          icon="fab fa-twitter"
+        />
+        <q-btn target="_blank" style="border: 2px solid green" round type="a"
+          href="https://github.com/Sudhiroc11"
+          glossy
+          icon="fab fa-github"
+        />
+        <q-btn style="border: 2px solid green" round type="a" href="mailto:sudhir.oc11@gmail.com"
+          glossy
+          icon="email"
+        />
+        <q-btn target="_blank" style="border: 2px solid green;" round type="a"
+          href="https://www.linkedin.com/in/sudhirgupta-11/"
+          glossy
+        >
+          <div>
+            <span class="mif-linkedin"></span>
+          </div>
+        </q-btn>
+        <q-btn target="_blank" style="border: 2px solid green;" round type="a"
+          href="https://sudhir11profile.netlify.app/"
+          glossy
+          icon="language"
+        />
+      </div>
+      </q-toolbar>
     </div>
 
-
     <!-- mobile-design -->
-    <div  class="mobile-view-rpl" style="padding-top:50px;">
+    <div  class="mobile-view-rpl main" style="padding-top:50px;">
       <div id="home-mb" class="full-height full-width flex flex-center text-center"
-        style="z-index:0;height: 100vh !important;"
+        style="background-color: rgba(0, 0, 0, 0.68) !important;z-index:0;"
       >
         <div>
-          <div class="text-h5" style="color: #00d1c1;">
+          <div class="text-h6" style="color: white;">
             WELCOME TO MY PAGE
           </div>
-          <div class="text-h3  q-py-sm q-my-md"
+          <div class="text-h5 text-white  q-py-sm q-my-md"
             style="border-top:3px solid #00d1c1;border-bottom: 3px solid #00d1c1; color: #00d1c1;"
           >
             I'M A FRONT-END DEVELOPER
           </div>
-          <div class="text-h5" style="color: #00d1c1;">
+          <!-- <div class="text-h5" style="color: white;">
             JAVASCRIPT | VUE JS | HTML5/CSS3
-          </div>
-          <div style="color: #00d1c1 !important;" class="text-h4 q-mt-md text-grey-2 my-font">
+          </div> -->
+          <div style="color: white !important;" class="text-h4 q-mt-md text-grey-2 my-font">
             Sudhir Kumar Gupta
           </div>
         </div>
       </div>
 
-      <div id="id_about_mb">
-        <div class="row">
-          <div class="col-sm-1 col-xs-1"></div>
-          <div class="col-sm-10 col-xs-10">
+      <div id="id_about_mb" style="background-color: #00d1c1;">
+        <div class="row q-pa-md">
+
+          <div class="col-sm-6 col-xs-6">
             <div>
-              <img src="../assets/my_2.jpeg" style="width: 100%;">
-            </div>
-            <div class="q-pt-md">
-              hi
+              <img src="../assets/my_3.png" style="width: 100%;">
             </div>
           </div>
-          <div class="col-sm-1 col-xs-1"></div>
+          <div class="col-sm-6 col-xs-6">
+            <div class="text-white q-pa-sm">
+              I am a passionate software developer with excellent problem-solving skills and the 
+              ability to perform well in a team. As a Frontend Developer with 2+ years of experience
+              in designing and building responsive web applications. Passionate about coding and 
+              the new web technologies.<br>
+              currently, I am working in MNI Pvt. Ltd. Bengaluru.
+            </div>
+          </div>
+
         </div>
       </div>
+
+      
       <div id="id_projects_mb">
         <div class="row">
           <div class="col-sm-1 col-xs-1"></div>
           <div class="col-sm-10 col-xs-10">
-            <div>
-              <img src="../assets/my_2.jpeg" style="width: 100%;">
-            </div>
-            <div class="q-pt-md">
-              hi
-            </div>
+            <q-timeline  color="secondary">
+              <q-timeline-entry heading style="color:#00d1c1">
+                PROJECTS
+              </q-timeline-entry>
+
+              <q-timeline-entry
+                title="NRF (Management of cooling products for 
+                the automotive market, industrial, railway and 
+                marine sector)"
+                subtitle="Started:- February, 2020 - Ongoing"
+                side="left"
+              >
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div style="text-align:start;" class="q-py-md">
+                      Developed kanban chart to maintain the product orders. <br>
+                      Implemented VueJS i18n to manage translations based on user location. <br>
+                      Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                      Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                      Integrated google and microsoft authentication to achieve SSO. 
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <q-carousel
+                      animated
+                      v-model="nrfSlide"
+                      arrows
+                      control-color="black"
+                      class="bg-secondary shadow-2 rounded-borders"
+                      style="height: 160px;"
+                    >
+                      <q-carousel-slide :name="1">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf1.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="2">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf2.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="3">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf3.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="4">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf4.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      
+                    </q-carousel>
+
+
+                  </div>
+                  
+                </div>
+
+              </q-timeline-entry>
+              <q-timeline-entry
+                title="NRF (Management of cooling products for 
+                the automotive market, industrial, railway and 
+                marine sector)"
+                subtitle="Started:- February, 2020 - Ongoing"
+                side="left"
+              >
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div style="text-align:start;" class="q-py-md">
+                      Developed kanban chart to maintain the product orders. <br>
+                      Implemented VueJS i18n to manage translations based on user location. <br>
+                      Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                      Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                      Integrated google and microsoft authentication to achieve SSO. 
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <q-carousel
+                      animated
+                      v-model="mtSlide"
+                      arrows
+                      control-color="black"
+                      class="bg-secondary shadow-2 rounded-borders"
+                      style="height: 160px;"
+                    >
+                      <q-carousel-slide :name="1">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/mt1.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="2">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/mt2.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="3">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/mt3.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="4">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/mt4.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      
+                    </q-carousel>
+
+
+                  </div>
+                  
+                </div>
+
+              </q-timeline-entry>
+              <q-timeline-entry
+                title="NRF (Management of cooling products for 
+                the automotive market, industrial, railway and 
+                marine sector)"
+                subtitle="Started:- February, 2020 - Ongoing"
+                side="left"
+              >
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div style="text-align:start;" class="q-py-md">
+                      Developed kanban chart to maintain the product orders. <br>
+                      Implemented VueJS i18n to manage translations based on user location. <br>
+                      Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                      Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                      Integrated google and microsoft authentication to achieve SSO. 
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <q-carousel
+                      animated
+                      v-model="nmdbSlide"
+                      arrows
+                      control-color="black"
+                      class="bg-secondary shadow-2 rounded-borders"
+                      style="height: 160px;"
+                    >
+                      <q-carousel-slide :name="1">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf1.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="2">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf2.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="3">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf3.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="4">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nrf4.png">
+                        </q-card>
+                      </q-carousel-slide>
+                      
+                    </q-carousel>
+
+
+                  </div>
+                  
+                </div>
+
+              </q-timeline-entry>
+
+              <q-timeline-entry>
+              </q-timeline-entry>
+
+            </q-timeline>
           </div>
           <div class="col-sm-1 col-xs-1"></div>
         </div>
@@ -180,12 +644,39 @@
         <div class="row">
           <div class="col-sm-1 col-xs-1"></div>
           <div class="col-sm-10 col-xs-10">
-            <div>
-              <img src="../assets/my_2.jpeg" style="width: 100%;">
+            <div style="text-align:center; color:#00d1c1;" class="q-py-xs text-h4">
+              Skills
             </div>
-            <div class="q-pt-md">
-              hi
-            </div>
+            <q-card 
+              class="q-pa-lg" 
+              style="background-color:#00d1c1;border: 2px solid black;"
+            >
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk1.png" style="height:100px;width:100px;">
+              </div>
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk2.png" style="height:100px;width:100px;">
+              </div>
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk3.webp" style="height:100px;width:100px;">
+              </div>
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk4.png" style="height:100px;width:100px;">
+              </div>
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk5.svg" style="height:100px;width:100px;">
+              </div>
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk6.png" style="height:100px;width:100px;">
+              </div>
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk7.png" style="height:100px;width:100px;">
+              </div>
+              
+              <div class="q-pa-xs" style="text-align: center;">
+                <img src="../assets/sk10.png" style="height:100px;width:100px;">
+              </div>
+            </q-card>
           </div>
           <div class="col-sm-1 col-xs-1"></div>
         </div>
@@ -194,17 +685,86 @@
         <div class="row">
           <div class="col-sm-1 col-xs-1"></div>
           <div class="col-sm-10 col-xs-10">
-            <div>
-              <img src="../assets/my_2.jpeg" style="width: 100%;">
+            <div style="text-align:center; color:#00d1c1;" class="text-h3 q-py-lg">
+              Get in Touch !
+            </div>
+            <div style="text-align:center; color:#00d1c1;" class="text-h5 q-py-xs">
+              contact me for more info 
             </div>
             <div class="q-pt-md">
-              hi
+              <div class="mail-info-child q-py-md">
+                <div>
+                  <span class="mif-mail icone-css"></span>
+                </div>
+                <div class="more-info q-pt-sm">
+                  sudhir.oc11@gmail.com
+                </div>
+              </div>
+              <div class="mail-info-child q-py-md">
+                <div>
+                  <span class="mif-whatsapp icone-css"></span>
+                </div>
+
+                <div class="more-info q-pt-sm">
+                  +91 9108677220
+                </div>
+              </div>
+              <div class="mail-info-child q-py-md">
+                <div>
+                  <span class="mif-location icone-css"></span>
+                </div>
+                <div class="more-info q-pt-sm">
+                  BTM Layout 1st Stage, 
+                  Bangalore 560029
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-sm-1 col-xs-1"></div>
         </div>
       </div>
+
+      <q-toolbar 
+        class="flex flex-center text-white" 
+        style="background-color: #00d1c1;border-top: 2px solid green"
+      >
+      <div class="q-pa-sm q-gutter-sm">
+        <q-btn 
+          target="_blank" 
+          style="border: 2px solid green"
+          round type="a" 
+          href="https://twitter.com/SudhirGupta_11?t=zZgJ4D2n6nKnp5w7915c4A&s=08"
+          glossy
+          icon="fab fa-twitter"
+        />
+        <q-btn target="_blank" style="border: 2px solid green" round type="a"
+          href="https://github.com/Sudhiroc11"
+          glossy
+          icon="fab fa-github"
+        />
+        <q-btn style="border: 2px solid green" round type="a" href="mailto:sudhir.oc11@gmail.com"
+          glossy
+          icon="email"
+        />
+        <q-btn target="_blank" style="border: 2px solid green;" round type="a"
+          href="https://www.linkedin.com/in/sudhirgupta-11/"
+          glossy
+        >
+          <div>
+            <span class="mif-linkedin"></span>
+          </div>
+        </q-btn>
+        <q-btn target="_blank" style="border: 2px solid green;" round type="a"
+          href="https://sudhir11profile.netlify.app/"
+          glossy
+          icon="language"
+        />
+      </div>
+      </q-toolbar>
     </div>
+
+
+   
 
   </div>
 </template>
@@ -215,6 +775,10 @@ const {getScrollTarget, setScrollPosition} = scroll
 export default {
   data() {
     return {
+      nrfSlide: 1,
+      mtSlide: 1,
+      nmdbSlide: 1,
+      skillSlide:1,
       navbarColors: {
         '/websiteHome': 'orange',
       },
@@ -257,7 +821,9 @@ export default {
 };
 </script>
 
+
 <style lang="scss" scoped>
+
 *{
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -382,5 +948,31 @@ $black-color:#00160A;
   .desktop-view-rpl{
     display: block;
   }
+}
+
+
+
+.main {
+  background: url("../assets/my_1.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh !important;
+}
+
+.icone-css{
+  font-size: 50px;
+}
+.whatsapp-icone{
+  font-size: 50px;
+}
+.more-info{
+  font-size: 18px;
+  color: $black-color;
+  text-align: center;
+}
+.mail-info-child{
+  text-align: center;
 }
 </style>
