@@ -6,7 +6,7 @@
         <div class="col-lg-10 col-md-10 col-sm-10">
           <q-toolbar class="top-header-rpl">
             <div class="redimind-img-div-rpl" @click="scrollToElement('home-desk')">
-              <img src="../assets/sudhirName.png" style="height: 60px;cursor: pointer;">
+              <img src="../assets/home.png" style="height: 40px;cursor: pointer;">
             </div>
             
             <q-space />
@@ -37,7 +37,7 @@
     <q-header bordered class="mobile-view-rpl bg-white">
       <q-toolbar class="top-header-rpl q-px-sm">
         <div>
-          <img src="../assets/sudhirName.png" style="height: 40px;" @click="scrollToElementmb('home-mb')">
+          <img src="../assets/home.png" style="height: 30px;" @click="scrollToElementmb('home-mb')">
         </div>
         <q-space />
         <div id="mySidenav" class="sidenav">
@@ -66,16 +66,13 @@
         style="background-color: rgba(0, 0, 0, 0.68) !important;z-index:0;"
       >
         <div>
-          <div class="text-h6" style="color: white;">
-            WELCOME TO MY PAGE
+          <div class="text-h4" style="color: white;">
+            Hello, I'm Sudhir Kumar Gupta.
           </div>
           <div class="text-h2 text-white q-py-sm q-my-md"
             style="border-top:3px solid #00d1c1;border-bottom: 3px solid #00d1c1; color: #00d1c1;"
           >
-            I'M A FRONT-END DEVELOPER
-          </div>
-          <div style="color: white !important;" class="text-h4 q-mt-md text-grey-2 my-font">
-            Sudhir Kumar Gupta
+            I'm a Front-end Developer.
           </div>
         </div>
       </div>
@@ -87,13 +84,15 @@
         <div class="col-lg-5 col-md-5">
           <div 
             class="full-height full-width flex flex-center text-center text-white text-h5 q-pa-md"
-            style="text-align:start;"
+            style="text-align:start; position: relative;"
           >
+            Hi! I'm Sudhir Kumar Gupta,currently working as a Software Developer at MNI PVT. LTD. Bangalore India.
+            I have a Bachelor of Engineering (BE)  degree in EEE from the Nitte Meenakshi Institute of Technology Bangalore India.
+            <br>
             I am a passionate software developer with excellent problem-solving skills and the 
             ability to perform well in a team. As a Frontend Developer with 2+ years of experience
             in designing and building responsive web applications. Passionate about coding and 
-            the new web technologies.<br>
-            currently, I am working in MNI Pvt. Ltd. Bengaluru.
+            the new web technologies.
           </div>
         </div>
         <div class="col-lg-1 col-md-1"></div>
@@ -117,6 +116,11 @@
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div style="text-align:start;">
+                    NRF:-Since 1927 NRF has been a leading manufacturer of cooling
+                    products for the automotive market, industrial, rail and marine sector.
+                    Head office in NETHERLANDS 
+                    <br>
+                    In this application what i worked:- <br>
                     Developed kanban chart to maintain the product orders. <br>
                     Implemented VueJS i18n to manage translations based on user location. <br>
                     Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
@@ -127,11 +131,12 @@
                 <div class="col-lg-6 col-md-6">
 
                   <q-carousel
+                    transition-prev="slide-right"
+                    transition-next="slide-left"
                     animated
                     v-model="nrfSlide"
                     arrows
                     navigation
-                    infinite
                     control-color="black"
                     class="bg-secondary shadow-2 rounded-borders"
                   >
@@ -165,29 +170,29 @@
 
             </q-timeline-entry>
             <q-timeline-entry
-              title="NRF (Management of cooling products for 
-              the automotive market, industrial, railway and 
-              marine sector)"
-              subtitle="Started:- February, 2020 - Ongoing"
+              title="MOTRAC (Motrac is the official importer and distributor in
+              Belgium of Linde's leading forklifts and warehouse trucks)"
+              subtitle="Started:- APRIL, 2018 - Ongoing"
               side="left"
             >
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div style="text-align:start;">
-                    Developed kanban chart to maintain the product orders. <br>
-                    Implemented VueJS i18n to manage translations based on user location. <br>
-                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
-                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
-                    Integrated google and microsoft authentication to achieve SSO. 
+                    In this application what i worked:- <br>
+                    The dashboard integrates all the modules and functionalities which
+                    include total orders, pending orders, lorries under maintenance, processing, pending, and invoicing details.
+                    Worked in Quasar UI Framework to achieve responsiveness of the application.
+                    Integrated UI with backend using REST API's ,VUEX and AXIOS
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <q-carousel
+                    transition-prev="slide-right"
+                    transition-next="slide-left"
                     animated
                     v-model="mtSlide"
                     arrows
                     navigation
-                    infinite
                     control-color="black"
                     class="bg-secondary shadow-2 rounded-borders"
                   >
@@ -221,50 +226,77 @@
 
             </q-timeline-entry>
             <q-timeline-entry
-              title="NRF (Management of cooling products for 
-              the automotive market, industrial, railway and 
-              marine sector)"
-              subtitle="Started:- February, 2020 - Ongoing"
+              title="FFS (It is an application built for organizations to track
+              resources, projects, sprints, and time logs of each resource
+              within the organization.)"
+              subtitle="Started:- JULY, 2020 - Ongoing"
               side="left"
             >
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div style="text-align:start;">
-                    Developed kanban chart to maintain the product orders. <br>
-                    Implemented VueJS i18n to manage translations based on user location. <br>
-                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
-                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
-                    Integrated google and microsoft authentication to achieve SSO. 
+                    The system also has the feature of an overview of all the projects and
+                    also the performance of each user.
+                    Admin can monitor the workload of each resource and can see the daily/weekly/monthly reports and
+                    performances of each resource across the projects.
+                    The application is designed with a responsive UI that is feasible for all devices.
+                    Integrated UI with backend using REST API's ,VUEX and AXIOS. 
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <q-carousel
+                    animatedtransition-prev="slide-right"
+                    transition-next="slide-left"
                     animated
                     v-model="nmdbSlide"
                     arrows
                     navigation
-                    infinite
                     control-color="black"
                     class="bg-secondary shadow-2 rounded-borders"
                   >
                     <q-carousel-slide :name="1">
                       <q-card class="q-ma-sm">
-                        <img src="../assets/nrf1.png">
+                        <img src="../assets/nmdb1.jpeg">
                       </q-card>
                     </q-carousel-slide>
                     <q-carousel-slide :name="2">
                       <q-card class="q-ma-sm">
-                        <img src="../assets/nrf2.png">
+                        <img src="../assets/nmdb2.jpeg">
                       </q-card>
                     </q-carousel-slide>
                     <q-carousel-slide :name="3">
                       <q-card class="q-ma-sm">
-                        <img src="../assets/nrf3.png">
+                        <img src="../assets/nmdb3.jpeg">
                       </q-card>
                     </q-carousel-slide>
                     <q-carousel-slide :name="4">
                       <q-card class="q-ma-sm">
-                        <img src="../assets/nrf4.png">
+                        <img src="../assets/nmdb4.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="5">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nmdb5.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="6">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nmdb6.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="7">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nmdb7.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="8">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nmdb8.jpeg">
+                      </q-card>
+                    </q-carousel-slide>
+                    <q-carousel-slide :name="9">
+                      <q-card class="q-ma-sm">
+                        <img src="../assets/nmdb9.jpeg">
                       </q-card>
                     </q-carousel-slide>
                     
@@ -419,39 +451,35 @@
       >
         <div>
           <div class="text-h6" style="color: white;">
-            WELCOME TO MY PAGE
+            Hello, I'm Sudhir Kumar Gupta.
           </div>
           <div class="text-h5 text-white  q-py-sm q-my-md"
             style="border-top:3px solid #00d1c1;border-bottom: 3px solid #00d1c1; color: #00d1c1;"
           >
-            I'M A FRONT-END DEVELOPER
-          </div>
-          <!-- <div class="text-h5" style="color: white;">
-            JAVASCRIPT | VUE JS | HTML5/CSS3
-          </div> -->
-          <div style="color: white !important;" class="text-h4 q-mt-md text-grey-2 my-font">
-            Sudhir Kumar Gupta
+            I'm a Front-end Developer.
           </div>
         </div>
       </div>
 
       <div id="id_about_mb" style="background-color: #00d1c1;">
-        <div class="row q-pa-md">
+        <div class="q-pa-md">
 
-          <div class="col-sm-6 col-xs-6">
-            <div>
-              <img src="../assets/my_3.png" style="width: 100%;">
-            </div>
+          
+          <div>
+            <img src="../assets/my_4.jpeg" style="width: 100%;">
           </div>
-          <div class="col-sm-6 col-xs-6">
-            <div class="text-white q-pa-sm">
-              I am a passionate software developer with excellent problem-solving skills and the 
-              ability to perform well in a team. As a Frontend Developer with 2+ years of experience
-              in designing and building responsive web applications. Passionate about coding and 
-              the new web technologies.<br>
-              currently, I am working in MNI Pvt. Ltd. Bengaluru.
-            </div>
+          
+          
+          <div class="text-white text-h5 q-pa-sm">
+            Hi! <br> I'm Sudhir Kumar Gupta, currently working as a Software Developer at MNI PVT. LTD. Bangalore India.
+            I have a Bachelor of Engineering (BE)  degree in EEE from the Nitte Meenakshi Institute of Technology Bangalore India.
+            <br>
+            I am a passionate software developer with excellent problem-solving skills and the 
+            ability to perform well in a team. As a Frontend Developer with 2+ years of experience
+            in designing and building responsive web applications. Passionate about coding and 
+            the new web technologies.
           </div>
+          
 
         </div>
       </div>
@@ -476,18 +504,25 @@
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
                     <div style="text-align:start;" class="q-py-md">
-                      Developed kanban chart to maintain the product orders. <br>
-                      Implemented VueJS i18n to manage translations based on user location. <br>
-                      Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
-                      Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
-                      Integrated google and microsoft authentication to achieve SSO. 
+                    NRF:-Since 1927 NRF has been a leading manufacturer of cooling
+                    products for the automotive market, industrial, rail and marine sector.
+                    Head office in NETHERLANDS 
+                    <br>
+                    In this application what i worked:- <br>
+                    Developed kanban chart to maintain the product orders. <br>
+                    Implemented VueJS i18n to manage translations based on user location. <br>
+                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                    Integrated google and microsoft authentication to achieve SSO.  
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <q-carousel
-                      animated
+                      transition-prev="slide-right"
+                      transition-next="slide-left"
                       v-model="nrfSlide"
                       arrows
+                      navigation
                       control-color="black"
                       class="bg-secondary shadow-2 rounded-borders"
                       style="height: 160px;"
@@ -522,27 +557,28 @@
 
               </q-timeline-entry>
               <q-timeline-entry
-                title="NRF (Management of cooling products for 
-                the automotive market, industrial, railway and 
-                marine sector)"
-                subtitle="Started:- February, 2020 - Ongoing"
+                title="MOTRAC (Motrac is the official importer and distributor in
+                Belgium of Linde's leading forklifts and warehouse trucks)"
+                subtitle="Started:- APRIL, 2018 - Ongoing"
                 side="left"
               >
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
                     <div style="text-align:start;" class="q-py-md">
-                      Developed kanban chart to maintain the product orders. <br>
-                      Implemented VueJS i18n to manage translations based on user location. <br>
-                      Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
-                      Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
-                      Integrated google and microsoft authentication to achieve SSO. 
+                      In this application what i worked:- <br>
+                      The dashboard integrates all the modules and functionalities which
+                      include total orders, pending orders, lorries under maintenance, processing, pending, and invoicing details.
+                      Worked in Quasar UI Framework to achieve responsiveness of the application.
+                      Integrated UI with backend using REST API's ,VUEX and AXIOS 
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <q-carousel
-                      animated
+                      transition-prev="slide-right"
+                      transition-next="slide-left"
                       v-model="mtSlide"
                       arrows
+                      navigation
                       control-color="black"
                       class="bg-secondary shadow-2 rounded-borders"
                       style="height: 160px;"
@@ -577,52 +613,79 @@
 
               </q-timeline-entry>
               <q-timeline-entry
-                title="NRF (Management of cooling products for 
-                the automotive market, industrial, railway and 
-                marine sector)"
-                subtitle="Started:- February, 2020 - Ongoing"
+                title="FFS (It is an application built for organizations to track
+                resources, projects, sprints, and time logs of each resource
+                within the organization.)"
+                subtitle="Started:- JULY, 2020 - Ongoing"
                 side="left"
               >
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
                     <div style="text-align:start;" class="q-py-md">
-                      Developed kanban chart to maintain the product orders. <br>
-                      Implemented VueJS i18n to manage translations based on user location. <br>
-                      Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
-                      Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
-                      Integrated google and microsoft authentication to achieve SSO. 
+                    The system also has the feature of an overview of all the projects and
+                    also the performance of each user.
+                    Admin can monitor the workload of each resource and can see the daily/weekly/monthly reports and
+                    performances of each resource across the projects.
+                    The application is designed with a responsive UI that is feasible for all devices.
+                    Integrated UI with backend using REST API's ,VUEX and AXIOS  
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <q-carousel
-                      animated
+                      transition-prev="slide-right"
+                      transition-next="slide-left"
                       v-model="nmdbSlide"
                       arrows
+                      navigation
                       control-color="black"
                       class="bg-secondary shadow-2 rounded-borders"
                       style="height: 160px;"
                     >
                       <q-carousel-slide :name="1">
                         <q-card class="q-ma-sm">
-                          <img src="../assets/nrf1.png">
+                          <img src="../assets/nmdb1.jpeg">
                         </q-card>
                       </q-carousel-slide>
                       <q-carousel-slide :name="2">
                         <q-card class="q-ma-sm">
-                          <img src="../assets/nrf2.png">
+                          <img src="../assets/nmdb2.jpeg">
                         </q-card>
                       </q-carousel-slide>
                       <q-carousel-slide :name="3">
                         <q-card class="q-ma-sm">
-                          <img src="../assets/nrf3.png">
+                          <img src="../assets/nmdb3.jpeg">
                         </q-card>
                       </q-carousel-slide>
                       <q-carousel-slide :name="4">
                         <q-card class="q-ma-sm">
-                          <img src="../assets/nrf4.png">
+                          <img src="../assets/nmdb4.jpeg">
                         </q-card>
                       </q-carousel-slide>
-                      
+                      <q-carousel-slide :name="5">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nmdb5.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="6">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nmdb6.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="7">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nmdb7.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="8">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nmdb8.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
+                      <q-carousel-slide :name="9">
+                        <q-card class="q-ma-sm">
+                          <img src="../assets/nmdb9.jpeg">
+                        </q-card>
+                      </q-carousel-slide>
                     </q-carousel>
 
 
