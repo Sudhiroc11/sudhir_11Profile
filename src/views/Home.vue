@@ -100,7 +100,7 @@
       <div class="row" id="id_projects">
         <div class="col-lg-1 col-md-1"></div>
         <div class="col-lg-10 col-md-10">
-          <q-timeline  color="secondary">
+          <q-timeline :layout="layout" color="secondary">
 
             <q-timeline-entry heading style="color:#00d1c1">
               PROJECTS
@@ -113,116 +113,36 @@
               subtitle="Started:- February, 2020 - Ongoing"
               side="left"
             >
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div style="text-align:start;">
-                    NRF:-Since 1927 NRF has been a leading manufacturer of cooling
-                    products for the automotive market, industrial, rail and marine sector.
-                    Head office in NETHERLANDS 
-                    <br>
-                    In this application what i worked:- <br>
-                    Developed kanban chart to maintain the product orders. <br>
-                    Implemented VueJS i18n to manage translations based on user location. <br>
-                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
-                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
-                    Integrated google and microsoft authentication to achieve SSO. 
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-
-                  <q-carousel
-                    transition-prev="slide-right"
-                    transition-next="slide-left"
-                    animated
-                    v-model="nrfSlide"
-                    arrows
-                    navigation
-                    control-color="black"
-                    class="bg-secondary shadow-2 rounded-borders"
-                  >
-                    <q-carousel-slide :name="1">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nrf1.png">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="2">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nrf2.png">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="3">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nrf3.png">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="4">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nrf4.png">
-                      </q-card>
-                    </q-carousel-slide>
-                    
-                  </q-carousel>
-
-
-                </div>
-                
+              <div style="text-align:start;">
+                NRF:-Since 1927 NRF has been a leading manufacturer of cooling
+                products for the automotive market, industrial, rail and marine sector.
+                Head office in NETHERLANDS 
+                <br>
+                In this application what i worked:- <br>
+                Developed kanban chart to maintain the product orders. <br>
+                Implemented VueJS i18n to manage translations based on user location. <br>
+                Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                Integrated google and microsoft authentication to achieve SSO. 
               </div>
+             
 
             </q-timeline-entry>
             <q-timeline-entry
               title="MOTRAC (Motrac is the official importer and distributor in
               Belgium of Linde's leading forklifts and warehouse trucks)"
               subtitle="Started:- APRIL, 2018 - Ongoing"
-              side="left"
+              side="right"
             >
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div style="text-align:start;">
-                    In this application what i worked:- <br>
-                    The dashboard integrates all the modules and functionalities which
-                    include total orders, pending orders, lorries under maintenance, processing, pending, and invoicing details.
-                    Worked in Quasar UI Framework to achieve responsiveness of the application.
-                    Integrated UI with backend using REST API's ,VUEX and AXIOS
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <q-carousel
-                    transition-prev="slide-right"
-                    transition-next="slide-left"
-                    animated
-                    v-model="mtSlide"
-                    arrows
-                    navigation
-                    control-color="black"
-                    class="bg-secondary shadow-2 rounded-borders"
-                  >
-                    <q-carousel-slide :name="1">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/mt1.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="2">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/mt2.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="3">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/mt3.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="4">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/mt4.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    
-                  </q-carousel>
-
-
-                </div>
-                
+              <div style="text-align:start;">
+                In this application what i worked:- <br>
+                The dashboard integrates all the modules and functionalities which
+                include total orders, pending orders, lorries under maintenance, processing, pending, and invoicing details.
+                Worked in Quasar UI Framework to achieve responsiveness of the application.
+                Integrated UI with backend using REST API's ,VUEX and AXIOS
               </div>
+                
+                
 
             </q-timeline-entry>
             <q-timeline-entry
@@ -232,81 +152,15 @@
               subtitle="Started:- JULY, 2020 - Ongoing"
               side="left"
             >
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div style="text-align:start;">
-                    The system also has the feature of an overview of all the projects and
-                    also the performance of each user.
-                    Admin can monitor the workload of each resource and can see the daily/weekly/monthly reports and
-                    performances of each resource across the projects.
-                    The application is designed with a responsive UI that is feasible for all devices.
-                    Integrated UI with backend using REST API's ,VUEX and AXIOS. 
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <q-carousel
-                    animatedtransition-prev="slide-right"
-                    transition-next="slide-left"
-                    animated
-                    v-model="nmdbSlide"
-                    arrows
-                    navigation
-                    control-color="black"
-                    class="bg-secondary shadow-2 rounded-borders"
-                  >
-                    <q-carousel-slide :name="1">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb1.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="2">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb2.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="3">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb3.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="4">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb4.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="5">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb5.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="6">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb6.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="7">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb7.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="8">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb8.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    <q-carousel-slide :name="9">
-                      <q-card class="q-ma-sm">
-                        <img src="../assets/nmdb9.jpeg">
-                      </q-card>
-                    </q-carousel-slide>
-                    
-                  </q-carousel>
-
-
-                </div>
-                
+              <div style="text-align:start;">
+                The system also has the feature of an overview of all the projects and
+                also the performance of each user.
+                Admin can monitor the workload of each resource and can see the daily/weekly/monthly reports and
+                performances of each resource across the projects.
+                The application is designed with a responsive UI that is feasible for all devices.
+                Integrated UI with backend using REST API's ,VUEX and AXIOS. 
               </div>
-
+                
             </q-timeline-entry>
 
             <q-timeline-entry>
@@ -501,59 +355,20 @@
                 subtitle="Started:- February, 2020 - Ongoing"
                 side="left"
               >
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                    <div style="text-align:start;" class="q-py-md">
-                    NRF:-Since 1927 NRF has been a leading manufacturer of cooling
-                    products for the automotive market, industrial, rail and marine sector.
-                    Head office in NETHERLANDS 
-                    <br>
-                    In this application what i worked:- <br>
-                    Developed kanban chart to maintain the product orders. <br>
-                    Implemented VueJS i18n to manage translations based on user location. <br>
-                    Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
-                    Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
-                    Integrated google and microsoft authentication to achieve SSO.  
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <q-carousel
-                      transition-prev="slide-right"
-                      transition-next="slide-left"
-                      v-model="nrfSlide"
-                      arrows
-                      navigation
-                      control-color="black"
-                      class="bg-secondary shadow-2 rounded-borders"
-                      style="height: 160px;"
-                    >
-                      <q-carousel-slide :name="1">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nrf1.png">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="2">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nrf2.png">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="3">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nrf3.png">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="4">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nrf4.png">
-                        </q-card>
-                      </q-carousel-slide>
-                      
-                    </q-carousel>
-
-
-                  </div>
-                  
+                <div style="text-align:start;" class="q-py-md">
+                  NRF:-Since 1927 NRF has been a leading manufacturer of cooling
+                  products for the automotive market, industrial, rail and marine sector.
+                  Head office in NETHERLANDS 
+                  <br>
+                  In this application what i worked:- <br>
+                  Developed kanban chart to maintain the product orders. <br>
+                  Implemented VueJS i18n to manage translations based on user location. <br>
+                  Integrated UI with backend using REST API's ,VUEX and AXIOS. <br>
+                  Worked in Quasar UI Framework to achieve responsiveness of the application. <br>
+                  Integrated google and microsoft authentication to achieve SSO.  
                 </div>
+                 
+                  
 
               </q-timeline-entry>
               <q-timeline-entry
@@ -562,54 +377,14 @@
                 subtitle="Started:- APRIL, 2018 - Ongoing"
                 side="left"
               >
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                    <div style="text-align:start;" class="q-py-md">
-                      In this application what i worked:- <br>
-                      The dashboard integrates all the modules and functionalities which
-                      include total orders, pending orders, lorries under maintenance, processing, pending, and invoicing details.
-                      Worked in Quasar UI Framework to achieve responsiveness of the application.
-                      Integrated UI with backend using REST API's ,VUEX and AXIOS 
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <q-carousel
-                      transition-prev="slide-right"
-                      transition-next="slide-left"
-                      v-model="mtSlide"
-                      arrows
-                      navigation
-                      control-color="black"
-                      class="bg-secondary shadow-2 rounded-borders"
-                      style="height: 160px;"
-                    >
-                      <q-carousel-slide :name="1">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/mt1.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="2">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/mt2.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="3">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/mt3.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="4">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/mt4.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      
-                    </q-carousel>
-
-
-                  </div>
-                  
+                <div style="text-align:start;" class="q-py-md">
+                  In this application what i worked:- <br>
+                  The dashboard integrates all the modules and functionalities which
+                  include total orders, pending orders, lorries under maintenance, processing, pending, and invoicing details.
+                  Worked in Quasar UI Framework to achieve responsiveness of the application.
+                  Integrated UI with backend using REST API's ,VUEX and AXIOS 
                 </div>
+              
 
               </q-timeline-entry>
               <q-timeline-entry
@@ -619,79 +394,16 @@
                 subtitle="Started:- JULY, 2020 - Ongoing"
                 side="left"
               >
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                    <div style="text-align:start;" class="q-py-md">
-                    The system also has the feature of an overview of all the projects and
-                    also the performance of each user.
-                    Admin can monitor the workload of each resource and can see the daily/weekly/monthly reports and
-                    performances of each resource across the projects.
-                    The application is designed with a responsive UI that is feasible for all devices.
-                    Integrated UI with backend using REST API's ,VUEX and AXIOS  
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <q-carousel
-                      transition-prev="slide-right"
-                      transition-next="slide-left"
-                      v-model="nmdbSlide"
-                      arrows
-                      navigation
-                      control-color="black"
-                      class="bg-secondary shadow-2 rounded-borders"
-                      style="height: 160px;"
-                    >
-                      <q-carousel-slide :name="1">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb1.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="2">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb2.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="3">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb3.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="4">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb4.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="5">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb5.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="6">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb6.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="7">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb7.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="8">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb8.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                      <q-carousel-slide :name="9">
-                        <q-card class="q-ma-sm">
-                          <img src="../assets/nmdb9.jpeg">
-                        </q-card>
-                      </q-carousel-slide>
-                    </q-carousel>
-
-
-                  </div>
-                  
+                <div style="text-align:start;" class="q-py-md">
+                  The system also has the feature of an overview of all the projects and
+                  also the performance of each user.
+                  Admin can monitor the workload of each resource and can see the daily/weekly/monthly reports and
+                  performances of each resource across the projects.
+                  The application is designed with a responsive UI that is feasible for all devices.
+                  Integrated UI with backend using REST API's ,VUEX and AXIOS  
                 </div>
+                  
+                  
 
               </q-timeline-entry>
 
@@ -836,6 +548,11 @@
 import {scroll} from 'quasar'
 const {getScrollTarget, setScrollPosition} = scroll
 export default {
+  computed: {
+    layout () {
+      return this.$q.screen.lt.sm ? 'dense' : (this.$q.screen.lt.md ? 'comfortable' : 'loose')
+    }
+  },
   data() {
     return {
       nrfSlide: 1,
