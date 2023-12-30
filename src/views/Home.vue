@@ -86,11 +86,11 @@
             class="full-height full-width flex flex-center text-center text-white text-h5 q-pa-md"
             style="text-align:start; position: relative;"
           >
-            Hi! I'm Sudhir Kumar Gupta,currently working as a Software Developer at MNI PVT. LTD. Bangalore India.
+            Hi! I'm Sudhir Kumar Gupta,currently working as a Front-end Developer at Infosys Bangalore India.
             I have a Bachelor of Engineering (BE)  degree in EEE from the Nitte Meenakshi Institute of Technology Bangalore India.
             <br>
             I am a passionate software developer with excellent problem-solving skills and the 
-            ability to perform well in a team. As a Frontend Developer with 2+ years of experience
+            ability to perform well in a team. As a Frontend Developer with 3+ years of experience
             in designing and building responsive web applications. Passionate about coding and 
             the new web technologies.
           </div>
